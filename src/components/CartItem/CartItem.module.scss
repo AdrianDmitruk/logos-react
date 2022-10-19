@@ -1,0 +1,111 @@
+
+
+.cart__box{
+    padding: 20px 42px 20px 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.cart__box:last-child{
+    margin-bottom: 0;
+}
+
+.cart__box__img{
+    width: 117px;
+    height: 86px;
+    margin-right: 39px;
+    border-radius: 10px;
+}
+
+.cart__box__info{
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    margin-right: 210px;
+}
+
+.cart__info__title{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: var(--font700);
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.cart__info__subtitle{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: var(--font400);
+    color: #A6A7AB;
+}
+
+.cart__box__сounter{
+    width: 116px;
+    height: 54px;
+    margin-right: 117px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cart__сounter__btn{
+    width: 27px;
+    height: 27px;
+    background: #72A479;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart__сounter__btn:hover{
+    background: #87c68f;
+}
+.cart__сounter__btn:disabled{
+    background: inherit;
+    border: 1px solid #72A479;
+}
+.cart__сounter__title{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: var(--font700);
+    color: var(--white);
+    width: 30px;
+    text-align: center;
+}
+
+.cart__box__price{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: var(--font700);
+    color: var(--white);
+    margin-right: 60px;
+    width: 100px;
+    text-align: center;
+}
+.cart__box__delite{
+    width: 27px;
+    height: 27px;
+    background: #72A479;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart__box__delite:hover{
+    background: #87c68f;
+}
+.title__add{
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: var(--font700);
+    color: var(--white);
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
