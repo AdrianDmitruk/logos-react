@@ -17,7 +17,7 @@ export const CartBlock: React.FC = () => {
   return (
     <section className={styles.cart}>
       <div className={styles.container}>
-        <Link className={styles.btn__back} to="/">
+        <Link className={styles.btn__back} to="/logos-react/">
           <img
             className={styles.btn__back__img}
             src="../img/svg/arrow.svg"
