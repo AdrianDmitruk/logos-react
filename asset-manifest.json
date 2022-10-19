@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/logos-react/static/css/main.6ec67a04.css",
-    "main.js": "/logos-react/static/js/main.2c9d68ef.js",
+    "main.js": "/logos-react/static/js/main.2b78684b.js",
     "static/js/303.d7d7788b.chunk.js": "/logos-react/static/js/303.d7d7788b.chunk.js",
     "static/js/703.2cdb983f.chunk.js": "/logos-react/static/js/703.2cdb983f.chunk.js",
     "static/js/949.1b95ba94.chunk.js": "/logos-react/static/js/949.1b95ba94.chunk.js",
@@ -14,13 +14,13 @@
     "static/media/Gilroy-Extrabold.woff2": "/logos-react/static/media/Gilroy-Extrabold.5c5942d3e4d9a9645df4.woff2",
     "index.html": "/logos-react/index.html",
     "main.6ec67a04.css.map": "/logos-react/static/css/main.6ec67a04.css.map",
-    "main.2c9d68ef.js.map": "/logos-react/static/js/main.2c9d68ef.js.map",
+    "main.2b78684b.js.map": "/logos-react/static/js/main.2b78684b.js.map",
     "303.d7d7788b.chunk.js.map": "/logos-react/static/js/303.d7d7788b.chunk.js.map",
     "703.2cdb983f.chunk.js.map": "/logos-react/static/js/703.2cdb983f.chunk.js.map",
     "949.1b95ba94.chunk.js.map": "/logos-react/static/js/949.1b95ba94.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6ec67a04.css",
-    "static/js/main.2c9d68ef.js"
+    "static/js/main.2b78684b.js"
   ]
 }
