@@ -2,7 +2,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { fetchFood } from './asyncActions'
 import { Food, FoodSliceState, Status } from './types'
-// import { CartItem } from './cartSlice'
 
 
 const initialState: FoodSliceState = {

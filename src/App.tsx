@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
 import MainLayout from './layouts/MainLayout'
+import Spinner from './components/Spinner'
 
 const Cart = React.lazy(() => import('./pages/Cart'))
 const FoolFood = React.lazy(() => import('./pages/FoolFood'))
@@ -17,7 +18,7 @@ function App() {
         <Route
           path="/logos-react/cart"
           element={
-            <Suspense fallback={<div>Загрузка...</div>}>
+            <Suspense fallback={<Spinner />}>
               <Cart />
             </Suspense>
           }
@@ -25,7 +26,7 @@ function App() {
         <Route
           path="/logos-react/food/:id"
           element={
-            <Suspense fallback={<div>Загрузка...</div>}>
+            <Suspense fallback={<Spinner />}>
               <FoolFood />
             </Suspense>
           }
@@ -33,7 +34,7 @@ function App() {
         <Route
           path="*"
           element={
-            <Suspense fallback={<div>Загрузка...</div>}>
+            <Suspense fallback={<Spinner />}>
               <NotFound />
             </Suspense>
           }

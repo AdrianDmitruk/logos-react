@@ -52,16 +52,16 @@ const CartItemBlock: React.FC<CartItemProps> = ({
           disabled={count === 1}
           className={styles.cart__сounter__btn}
         >
-          <img src="../img/svg/min.svg" alt="min" />
+          <img src="./img/svg/min.svg" alt="min" />
         </button>
         <div className={styles.cart__сounter__title}>{count}</div>
         <button onClick={onClickPlus} className={styles.cart__сounter__btn}>
-          <img src="../img/svg/pl.svg" alt="pl" />
+          <img src="./img/svg/pl.svg" alt="pl" />
         </button>
       </div>
       <div className={styles.cart__box__price}>{price * count} ₽</div>
       <button onClick={onClickRemove} className={styles.cart__box__delite}>
-        <img src="../img/svg/delite.svg" alt="delite" />
+        <img src="./img/svg/delite.svg" alt="delite" />
       </button>
     </div>
   )

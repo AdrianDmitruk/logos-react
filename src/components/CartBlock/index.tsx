@@ -20,7 +20,7 @@ export const CartBlock: React.FC = () => {
         <Link className={styles.btn__back} to="/logos-react/">
           <img
             className={styles.btn__back__img}
-            src="../img/svg/arrow.svg"
+            src="./img/svg/arrow.svg"
             alt="arrow"
           />
           <span>к выбору блюда</span>
@@ -39,7 +39,7 @@ export const CartBlock: React.FC = () => {
           <div className={styles.cart__none}>
             <img
               className={styles.cart__none__img}
-              src="../img/svg/cart-none.svg"
+              src="./img/svg/cart-none.svg"
               alt="cart"
             />
             <h3 className={styles.cart__none__title}>КОРЗИНА ПУСТАЯ</h3>
@@ -59,14 +59,14 @@ export const CartBlock: React.FC = () => {
               <div className={styles.rec__box}>
                 <img
                   className={styles.rec__box__img}
-                  src="../img/content/content1.jpg"
+                  src="./img/content/content1.jpg"
                   alt="content1"
                 />
                 <h4 className={styles.rec__box__title}>КВАС АНАНАСОВЫЙ</h4>
                 <div className={styles.rec__box__btn}>
                   <div className={styles.rec__btn__name}>Добавить</div>
                   <button className={styles.rec__btn__link}>
-                    <img src="../img/svg/pl.svg" alt="pl" />
+                    <img src="./img/svg/pl.svg" alt="pl" />
                   </button>
                 </div>
                 <span className={styles.rec__box__price}>1640 ₽</span>
@@ -75,14 +75,14 @@ export const CartBlock: React.FC = () => {
               <div className={styles.rec__box}>
                 <img
                   className={styles.rec__box__img}
-                  src="../img/content/content1.jpg"
+                  src="./img/content/content1.jpg"
                   alt="content1"
                 />
                 <h4 className={styles.rec__box__title}>КВАС АНАНАСОВЫЙ</h4>
                 <div className={styles.rec__box__btn}>
                   <div className={styles.rec__btn__name}>Добавить</div>
                   <button className={styles.rec__btn__link}>
-                    <img src="../img/svg/pl.svg" alt="pl" />
+                    <img src="./img/svg/pl.svg" alt="pl" />
                   </button>
                 </div>
                 <span className={styles.rec__box__price}>1640 ₽</span>
@@ -91,14 +91,14 @@ export const CartBlock: React.FC = () => {
               <div className={styles.rec__box}>
                 <img
                   className={styles.rec__box__img}
-                  src="../img/content/content1.jpg"
+                  src="./img/content/content1.jpg"
                   alt="content1"
                 />
                 <h4 className={styles.rec__box__title}>КВАС АНАНАСОВЫЙ</h4>
                 <div className={styles.rec__box__btn}>
                   <div className={styles.rec__btn__name}>Добавить</div>
                   <button className={styles.rec__btn__link}>
-                    <img src="../img/svg/pl.svg" alt="pl" />
+                    <img src="./img/svg/pl.svg" alt="pl" />
                   </button>
                 </div>
                 <span className={styles.rec__box__price}>1640 ₽</span>
@@ -107,14 +107,14 @@ export const CartBlock: React.FC = () => {
               <div className={styles.rec__box}>
                 <img
                   className={styles.rec__box__img}
-                  src="../img/content/content1.jpg"
+                  src="./img/content/content1.jpg"
                   alt="content1"
                 />
                 <h4 className={styles.rec__box__title}>КВАС АНАНАСОВЫЙ</h4>
                 <div className={styles.rec__box__btn}>
                   <div className={styles.rec__btn__name}>Добавить</div>
                   <button className={styles.rec__btn__link}>
-                    <img src="../img/svg/pl.svg" alt="pl" />
+                    <img src="./img/svg/pl.svg" alt="pl" />
                   </button>
                 </div>
                 <span className={styles.rec__box__price}>1640 ₽</span>
