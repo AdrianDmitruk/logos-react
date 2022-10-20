@@ -27,13 +27,13 @@ export const Header = () => {
     <header className="header">
       <div className="header__container">
         <div className="header__left">
-          <Link className="header__logo" to="/logos-react/">
+          <Link className="header__logo" to="/">
             LOGOS
           </Link>
           <Search />
           <div className="header__contact">
             <a className="header__contact-icon" href="tel:+79175105759">
-              <img src="./img/svg/calling.svg" alt="calling" />
+              <img src="../img/svg/calling.svg" alt="calling" />
             </a>
             <div className="header__contact-info">
               <div className="header__info-title">Контакты:</div>
@@ -43,7 +43,7 @@ export const Header = () => {
             </div>
           </div>
         </div>
-        <Link className="header__btn" to="/logos-react/cart">
+        <Link className="header__btn" to="/cart">
           <div className="header__btn-title">Корзина</div>
           <div className="header__btn-border"></div>
           <div className="header__btn-quantity">{totalCount}</div>

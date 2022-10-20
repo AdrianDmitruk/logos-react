@@ -46,10 +46,10 @@ const FoolFood: React.FC = () => {
     <section className="food">
       <div className="food__container">
         <div className="food__back">
-          <Link className="food_back-left" to={'/logos-react/'}>
+          <Link className="food_back-left" to={'/'}>
             <img src="../img/svg/arrow.svg" alt="arrow" />
           </Link>
-          <Link className="food_back-right" to={'/logos-react/'}>
+          <Link className="food_back-right" to={'/'}>
             Вернуться назад
           </Link>
         </div>

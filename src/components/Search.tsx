@@ -35,8 +35,8 @@ export const Search: React.FC = () => {
         <img
           onClick={onClickClear}
           className="header__search-location"
-          src="./img/svg/delite.svg"
-          alt="location"
+          src="../img/svg/delite.svg"
+          alt="delite"
         />
       )}
 
@@ -65,7 +65,7 @@ export const Search: React.FC = () => {
       </ul> */}
       <img
         className="header__search-icon"
-        src="./img/svg/search.svg"
+        src="../img/svg/search.svg"
         alt="search"
       />
     </div>
