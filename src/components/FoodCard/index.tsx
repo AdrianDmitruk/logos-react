@@ -6,6 +6,10 @@ import { selectCartItemById } from '../../redux/cart/selectors'
 import { CartItem } from '../../redux/cart/types'
 import { addItem, minusItem, removeItem } from '../../redux/cart/slice'
 
+import buy from '../../assets/img/svg/buy.svg'
+import minus from '../../assets/img/svg/minus.svg'
+import plus from '../../assets/img/svg/plus.svg'
+
 export type FoodCardProps = {
   id: string
   title: string
@@ -83,21 +87,17 @@ export const FoodCard: React.FC<FoodCardProps> = ({
             <span className="mainsection__third-price">{price} ₽</span>
             <button className="mainsection__third-btn" onClick={onClickAdd}>
               <div className="mainsection__btn-title">В корзину</div>
-              <img
-                className="mainsection__btn-img"
-                src="./img/svg/buy.svg"
-                alt="buy"
-              />
+              <img className="mainsection__btn-img" src={buy} alt="buy" />
             </button>
           </div>
         ) : (
           <div className="mainsection__footer-third">
             <button className="mainsection__third-plus" onClick={onClickMinus}>
-              <img src="./img/svg/minus.svg" alt="minus" />
+              <img src={minus} alt="minus" />
             </button>
             <span className="mainsection__third-price">{price} ₽</span>
             <button className="mainsection__third-minus" onClick={onClickPlus}>
-              <img src="./img/svg/plus.svg" alt="plus" />
+              <img src={plus} alt="plus" />
             </button>
           </div>
         )}

@@ -3,6 +3,9 @@ import axios from 'axios'
 import { useParams, useNavigate, Link } from 'react-router-dom'
 import Spinner from '../components/Spinner'
 
+import arrow from '../assets/img/svg/arrow.svg'
+import buyPage from '../assets/img/svg/buy-page.svg'
+
 const FoolFood: React.FC = () => {
   const [food, setFood] = React.useState<{
     title: string
@@ -47,7 +50,7 @@ const FoolFood: React.FC = () => {
       <div className="food__container">
         <div className="food__back">
           <Link className="food_back-left" to={'/'}>
-            <img src="../img/svg/arrow.svg" alt="arrow" />
+            <img src={arrow} alt="arrow" />
           </Link>
           <Link className="food_back-right" to={'/'}>
             Вернуться назад
@@ -66,11 +69,7 @@ const FoolFood: React.FC = () => {
                 <button className="food__pay-btn">
                   <div className="food__btn-name">Корзина</div>
                   <div className="food__btn-border"></div>
-                  <img
-                    className="food__btn-img"
-                    src="../img/svg/buy-page.svg"
-                    alt="buy-page"
-                  />
+                  <img className="food__btn-img" src={buyPage} alt="buy-page" />
                 </button>
                 <div className="food__pay-price">{food.price} ₽</div>
               </div>

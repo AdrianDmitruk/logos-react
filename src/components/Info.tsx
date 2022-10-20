@@ -1,5 +1,16 @@
 import React from 'react'
 
+import onion from '../assets/img/svg/onion-1.svg'
+import flash from '../assets/img/svg/flash.svg'
+import chef from '../assets/img/svg/chef.svg'
+import onionSecond from '../assets/img/svg/onion-2.svg'
+import location from '../assets/img/svg/location-con.svg'
+import message from '../assets/img/svg/message.svg'
+import facebook from '../assets/img/svg/facebook.svg'
+import vkontakte from '../assets/img/svg/vkontakte-logo.svg'
+import youtube from '../assets/img/svg/youtube.svg'
+import instagram from '../assets/img/svg/instagram.svg'
+
 export const Info: React.FC = () => {
   return (
     <section className="info">
@@ -23,35 +34,19 @@ export const Info: React.FC = () => {
           </div>
           <div className="info__cafe-right">
             <div className="info__right-card">
-              <img
-                className="info__card-img"
-                src="./img/svg/onion-1.svg"
-                alt="onion"
-              />
+              <img className="info__card-img" src={onion} alt="onion" />
               <div className="info__card-title--one">Свежайшие продукты</div>
             </div>
             <div className="info__right-card">
-              <img
-                className="info__card-img"
-                src="./img/svg/flash.svg"
-                alt="flash"
-              />
+              <img className="info__card-img" src={flash} alt="flash" />
               <div className="info__card-title--two">Быстрая доставка</div>
             </div>
             <div className="info__right-card">
-              <img
-                className="info__card-img"
-                src="./img/svg/chef.svg"
-                alt="chef"
-              />
+              <img className="info__card-img" src={chef} alt="chef" />
               <div className="info__card-title--tre">Лучшие повора</div>
             </div>
             <div className="info__right-card">
-              <img
-                className="info__card-img"
-                src="./img/svg/onion-2.svg"
-                alt="onion"
-              />
+              <img className="info__card-img" src={onionSecond} alt="onion" />
               <div className="info__card-title--for">Свежайшие продукты</div>
             </div>
           </div>
@@ -62,7 +57,7 @@ export const Info: React.FC = () => {
           <div className="info__contakt-address">
             <img
               className="info__address-img"
-              src="./img/svg/location-con.svg"
+              src={location}
               alt="location-con"
             />
             <div className="info__address-wrap">
@@ -74,11 +69,7 @@ export const Info: React.FC = () => {
             </div>
           </div>
           <div className="info__contakt-address">
-            <img
-              className="info__address-img"
-              src="./img/svg/message.svg"
-              alt="message"
-            />
+            <img className="info__address-img" src={message} alt="message" />
             <div className="info__address-wrap">
               <span className="info__wrap-title">Наша почта:</span>
               <a className="info__subtitle-title" href="/">
@@ -103,16 +94,16 @@ export const Info: React.FC = () => {
           <div className="info__contakt-social">
             <span className="info__social-name">Мы в соц сетях:</span>
             <a className="info__social-link" href="/">
-              <img src="./img/svg/facebook.svg" alt="facebook" />
+              <img src={facebook} alt="facebook" />
             </a>
             <a className="info__social-link" href="/">
-              <img src="./img/svg/vkontakte-logo.svg" alt="vkontakte" />
+              <img src={vkontakte} alt="vkontakte" />
             </a>
             <a className="info__social-link" href="/">
-              <img src="./img/svg/youtube.svg" alt="youtube" />
+              <img src={youtube} alt="youtube" />
             </a>
             <a className="info__social-link" href="/">
-              <img src="./img/svg/instagram.svg" alt="instagram" />
+              <img src={instagram} alt="instagram" />
             </a>
           </div>
         </div>

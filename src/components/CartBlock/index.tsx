@@ -6,6 +6,11 @@ import CartItem from '../CartItem'
 import { useSelector } from 'react-redux'
 import { selectCart } from '../../redux/cart/selectors'
 
+import arrow from '../../assets/img/svg/arrow.svg'
+import cartNone from '../../assets/img/svg/cart-none.svg'
+import content from '../../assets/img/content/content1.jpg'
+import pl from '../../assets/img/svg/pl.svg'
+
 export const CartBlock: React.FC = () => {
   const { totalPrice, items, delivery } = useSelector(selectCart)
 
@@ -18,11 +23,7 @@ export const CartBlock: React.FC = () => {
     <section className={styles.cart}>
       <div className={styles.container}>
         <Link className={styles.btn__back} to="/">
-          <img
-            className={styles.btn__back__img}
-            src="./img/svg/arrow.svg"
-            alt="arrow"
-          />
+          <img className={styles.btn__back__img} src={arrow} alt="arrow" />
           <span>к выбору блюда</span>
         </Link>
         <div className={styles.title__wrapper}>
@@ -37,11 +38,7 @@ export const CartBlock: React.FC = () => {
 
         {!totalCount ? (
           <div className={styles.cart__none}>
-            <img
-              className={styles.cart__none__img}
-              src="./img/svg/cart-none.svg"
-              alt="cart"
-            />
+            <img className={styles.cart__none__img} src={cartNone} alt="cart" />
             <h3 className={styles.cart__none__title}>КОРЗИНА ПУСТАЯ</h3>
             <Link className={styles.cart__none__btn} to="/">
               Посмотреть меню
@@ -59,14 +56,14 @@ export const CartBlock: React.FC = () => {
               <div className={styles.rec__box}>
                 <img
                   className={styles.rec__box__img}
-                  src="./img/content/content1.jpg"
+                  src={content}
                   alt="content1"
                 />
                 <h4 className={styles.rec__box__title}>КВАС АНАНАСОВЫЙ</h4>
                 <div className={styles.rec__box__btn}>
                   <div className={styles.rec__btn__name}>Добавить</div>
                   <button className={styles.rec__btn__link}>
-                    <img src="./img/svg/pl.svg" alt="pl" />
+                    <img src={pl} alt="pl" />
                   </button>
                 </div>
                 <span className={styles.rec__box__price}>1640 ₽</span>
@@ -75,14 +72,14 @@ export const CartBlock: React.FC = () => {
               <div className={styles.rec__box}>
                 <img
                   className={styles.rec__box__img}
-                  src="./img/content/content1.jpg"
+                  src={content}
                   alt="content1"
                 />
                 <h4 className={styles.rec__box__title}>КВАС АНАНАСОВЫЙ</h4>
                 <div className={styles.rec__box__btn}>
                   <div className={styles.rec__btn__name}>Добавить</div>
                   <button className={styles.rec__btn__link}>
-                    <img src="./img/svg/pl.svg" alt="pl" />
+                    <img src={pl} alt="pl" />
                   </button>
                 </div>
                 <span className={styles.rec__box__price}>1640 ₽</span>
@@ -91,14 +88,14 @@ export const CartBlock: React.FC = () => {
               <div className={styles.rec__box}>
                 <img
                   className={styles.rec__box__img}
-                  src="./img/content/content1.jpg"
+                  src={content}
                   alt="content1"
                 />
                 <h4 className={styles.rec__box__title}>КВАС АНАНАСОВЫЙ</h4>
                 <div className={styles.rec__box__btn}>
                   <div className={styles.rec__btn__name}>Добавить</div>
                   <button className={styles.rec__btn__link}>
-                    <img src="./img/svg/pl.svg" alt="pl" />
+                    <img src={pl} alt="pl" />
                   </button>
                 </div>
                 <span className={styles.rec__box__price}>1640 ₽</span>
@@ -107,14 +104,14 @@ export const CartBlock: React.FC = () => {
               <div className={styles.rec__box}>
                 <img
                   className={styles.rec__box__img}
-                  src="./img/content/content1.jpg"
+                  src={content}
                   alt="content1"
                 />
                 <h4 className={styles.rec__box__title}>КВАС АНАНАСОВЫЙ</h4>
                 <div className={styles.rec__box__btn}>
                   <div className={styles.rec__btn__name}>Добавить</div>
                   <button className={styles.rec__btn__link}>
-                    <img src="./img/svg/pl.svg" alt="pl" />
+                    <img src={pl} alt="pl" />
                   </button>
                 </div>
                 <span className={styles.rec__box__price}>1640 ₽</span>

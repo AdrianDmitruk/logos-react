@@ -5,6 +5,10 @@ import { useDispatch } from 'react-redux'
 import { addItem, minusItem, removeItem } from '../../redux/cart/slice'
 import { CartItem } from '../../redux/cart/types'
 
+import min from '../../assets/img/svg/min.svg'
+import pl from '../../assets/img/svg/pl.svg'
+import delite from '../../assets/img/svg/delite.svg'
+
 type CartItemProps = {
   id: string
   title: string
@@ -52,16 +56,16 @@ const CartItemBlock: React.FC<CartItemProps> = ({
           disabled={count === 1}
           className={styles.cart__сounter__btn}
         >
-          <img src="./img/svg/min.svg" alt="min" />
+          <img src={min} alt="min" />
         </button>
         <div className={styles.cart__сounter__title}>{count}</div>
         <button onClick={onClickPlus} className={styles.cart__сounter__btn}>
-          <img src="./img/svg/pl.svg" alt="pl" />
+          <img src={pl} alt="pl" />
         </button>
       </div>
       <div className={styles.cart__box__price}>{price * count} ₽</div>
       <button onClick={onClickRemove} className={styles.cart__box__delite}>
-        <img src="./img/svg/delite.svg" alt="delite" />
+        <img src={delite} alt="delite" />
       </button>
     </div>
   )

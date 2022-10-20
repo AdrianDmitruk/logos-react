@@ -6,6 +6,9 @@ import { useSelector } from 'react-redux'
 import { selectCart } from '../redux/cart/selectors'
 import { CartItem } from '../redux/cart/types'
 
+import buy from '../assets/img/svg/buy.svg'
+import calling from '../assets/img/svg/calling.svg'
+
 export const Header = () => {
   const { items } = useSelector(selectCart)
   const isMounted = React.useRef(false)
@@ -33,7 +36,7 @@ export const Header = () => {
           <Search />
           <div className="header__contact">
             <a className="header__contact-icon" href="tel:+79175105759">
-              <img src="../img/svg/calling.svg" alt="calling" />
+              <img src={calling} alt="calling" />
             </a>
             <div className="header__contact-info">
               <div className="header__info-title">Контакты:</div>
@@ -47,11 +50,7 @@ export const Header = () => {
           <div className="header__btn-title">Корзина</div>
           <div className="header__btn-border"></div>
           <div className="header__btn-quantity">{totalCount}</div>
-          <img
-            className="header__btn-mobile"
-            src="../img/svg/buy.svg"
-            alt="buy"
-          />
+          <img className="header__btn-mobile" src={buy} alt="buy" />
         </Link>
         <div className="burger__wrapper">
           <button
