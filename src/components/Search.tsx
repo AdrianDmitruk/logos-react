@@ -3,6 +3,9 @@ import debounce from 'lodash.debounce'
 import { useDispatch } from 'react-redux'
 import { setSearchValue } from '../redux/filter/slice'
 
+import search from '../assets/img/svg/search.svg'
+import delite from '../assets/img/svg/delite.svg'
+
 export const Search: React.FC = () => {
   const dispatch = useDispatch()
 
@@ -35,7 +38,7 @@ export const Search: React.FC = () => {
         <img
           onClick={onClickClear}
           className="header__search-location"
-          src="../img/svg/delite.svg"
+          src={delite}
           alt="delite"
         />
       )}
@@ -63,11 +66,7 @@ export const Search: React.FC = () => {
             })
           : null}
       </ul> */}
-      <img
-        className="header__search-icon"
-        src="../img/svg/search.svg"
-        alt="search"
-      />
+      <img className="header__search-icon" src={search} alt="search" />
     </div>
   )
 }

@@ -61,7 +61,7 @@ export const FoodCard: React.FC<FoodCardProps> = ({
 
   return (
     <div className="mainsection__card">
-      <Link to={`/logos-react/food/${id}`} className="mainsection__card-header">
+      <Link to={`/food/${id}`} className="mainsection__card-header">
         <img
           className="mainsection__header-img"
           src={imageUrl}
