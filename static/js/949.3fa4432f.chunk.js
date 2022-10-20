@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklogos_react=self.webpackChunklogos_react||[]).push([[949],{4949:function(e,r,n){n.r(r);n(2791);var s=n(7206),t=n(184);r.default=function(){return(0,t.jsx)(t.Fragment,{children:(0,t.jsx)(s.vr,{})})}}}]);
+//# sourceMappingURL=949.3fa4432f.chunk.js.map
