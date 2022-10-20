@@ -22,7 +22,12 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@frontity/now"
+      }
+    ],
     "test": "react-scripts test",
     "eject": "react-scripts eject",
 
