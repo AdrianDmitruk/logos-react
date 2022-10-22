@@ -5,21 +5,39 @@ import Spinner from '../components/Spinner'
 
 import arrow from '../assets/img/svg/arrow.svg'
 import buyPage from '../assets/img/svg/buy-page.svg'
+import { useDispatch } from 'react-redux'
+import { addItem } from '../redux/cart/slice'
+import { CartItem } from '../redux/cart/types'
+
+// import { Contact } from '../components'
+
+// import minus from '../assets/img/svg/minus.svg'
+// import plus from '../assets/img/svg/plus.svg'
+
+type FoodFoolsss = {
+  id: string
+}
+
+type stateTip = {
+  title: string
+  imageUrl: string
+  description: string
+  herf: string
+  price: number
+  protein: string
+  fats: string
+  carbohydrates: string
+  calories: string
+}
 
 const FoolFood: React.FC = () => {
-  const [food, setFood] = React.useState<{
-    title: string
-    imageUrl: string
-    description: string
-    herf: string
-    price: number
-    protein: string
-    fats: string
-    carbohydrates: string
-    calories: string
-  }>()
-  const { id } = useParams()
+  const [food, setFood] = React.useState<stateTip>()
+  const { id } = useParams<FoodFoolsss>()
   const navigate = useNavigate()
+  const title = food?.title
+  const price = food?.price
+  const imageUrl = food?.imageUrl
+  const description = food?.description
 
   React.useEffect(() => {
     async function fetchFood() {
@@ -36,6 +54,19 @@ const FoolFood: React.FC = () => {
     fetchFood()
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+  const dispatch = useDispatch()
+
+  const onClickAdd = () => {
+    const food = {
+      id,
+      title,
+      price,
+      imageUrl,
+      description,
+      count: 0,
+    } as CartItem
+    dispatch(addItem(food))
+  }
 
   if (!food) {
     return (
@@ -66,12 +97,22 @@ const FoolFood: React.FC = () => {
             <div className="food__info-footer">
               <div className="food__footer-heft">Вес: {food.herf} г</div>
               <div className="food__footer-pay">
-                <button className="food__pay-btn">
+                <button onClick={onClickAdd} className="food__pay-btn">
                   <div className="food__btn-name">Корзина</div>
                   <div className="food__btn-border"></div>
                   <img className="food__btn-img" src={buyPage} alt="buy-page" />
                 </button>
                 <div className="food__pay-price">{food.price} ₽</div>
+
+                {/* <button onClick={onClickAdd} className="food__pay-min">
+                  <img className="food__btn-img" src={minus} alt="buy-page" />
+                </button>
+
+                <div className="food__pay-price">{food.price} ₽</div>
+
+                <button onClick={onClickAdd} className="food__pay-min">
+                  <img className="food__btn-img" src={plus} alt="buy-page" />
+                </button> */}
               </div>
               <div className="food__footer-argument">
                 <div className="food__argument-wrap">
@@ -101,6 +142,7 @@ const FoolFood: React.FC = () => {
             </div>
           </div>
         </div>
+        {/* <Contact /> */}
       </div>
     </section>
   )

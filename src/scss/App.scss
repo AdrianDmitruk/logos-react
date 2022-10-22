@@ -960,11 +960,24 @@
     background: rgba(255, 255, 255, 0.3);
     margin-right: 16px;
   }
+  &__pay-min{
+    display: flex;
+    width: 60px;
+    height: 50px;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    
+  }
   &__pay-price{
     font-size: 25px;
     line-height: 30px;
     font-weight: var(--font700);
     color: var(--white);
+    margin: 0 25px;
   }
   &__footer-argument{
     max-width: 374px;
