@@ -8,8 +8,8 @@ import { selectCart } from '../../redux/cart/selectors'
 
 import arrow from '../../assets/img/svg/arrow.svg'
 import cartNone from '../../assets/img/svg/cart-none.svg'
-import content from '../../assets/img/content/content1.jpg'
-import pl from '../../assets/img/svg/pl.svg'
+// import content from '../../assets/img/content/content1.jpg'
+// import pl from '../../assets/img/svg/pl.svg'
 
 export const CartBlock: React.FC = () => {
   const { totalPrice, items, delivery } = useSelector(selectCart)
@@ -51,7 +51,7 @@ export const CartBlock: React.FC = () => {
                 <CartItem key={item.id} {...item} />
               ))}
             </div>
-            <h2 className={styles.title__add}>ДОБАВИТЬ К ЗАКАЗУ</h2>
+            {/* <h2 className={styles.title__add}>ДОБАВИТЬ К ЗАКАЗУ</h2>
             <div className={styles.rec}>
               <div className={styles.rec__box}>
                 <img
@@ -116,8 +116,8 @@ export const CartBlock: React.FC = () => {
                 </div>
                 <span className={styles.rec__box__price}>1640 ₽</span>
               </div>
-            </div>
-            <div className={styles.border}></div>
+            </div> */}
+            {/* <div className={styles.border}></div> */}
             <div className={styles.offer}>
               <div className={styles.offer__left}>
                 <div className={styles.offer__left__first}>

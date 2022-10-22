@@ -46,27 +46,32 @@ const CartItemBlock: React.FC<CartItemProps> = ({
   return (
     <div className={styles.cart__box}>
       <img className={styles.cart__box__img} src={imageUrl} alt="content" />
-      <div className={styles.cart__box__info}>
-        <h2 className={styles.cart__info__title}>{title}</h2>
-        <p className={styles.cart__info__subtitle}>{description}</p>
+      <div className={styles.cart__box__wrpping}>
+        <div className={styles.cart__box__info}>
+          <h2 className={styles.cart__info__title}>{title}</h2>
+          <p className={styles.cart__info__subtitle}>{description}</p>
+        </div>
+        <div className={styles.cart__box__inner}>
+          <div className={styles.cart__box__сounter}>
+            <button
+              onClick={onClickMinus}
+              disabled={count === 1}
+              className={styles.cart__сounter__btn}
+            >
+              <img src={min} alt="min" />
+            </button>
+            <div className={styles.cart__сounter__title}>{count}</div>
+            <button onClick={onClickPlus} className={styles.cart__сounter__btn}>
+              <img src={pl} alt="pl" />
+            </button>
+          </div>
+
+          <div className={styles.cart__box__price}>{price * count} ₽</div>
+          <button onClick={onClickRemove} className={styles.cart__box__delite}>
+            <img src={delite} alt="delite" />
+          </button>
+        </div>
       </div>
-      <div className={styles.cart__box__сounter}>
-        <button
-          onClick={onClickMinus}
-          disabled={count === 1}
-          className={styles.cart__сounter__btn}
-        >
-          <img src={min} alt="min" />
-        </button>
-        <div className={styles.cart__сounter__title}>{count}</div>
-        <button onClick={onClickPlus} className={styles.cart__сounter__btn}>
-          <img src={pl} alt="pl" />
-        </button>
-      </div>
-      <div className={styles.cart__box__price}>{price * count} ₽</div>
-      <button onClick={onClickRemove} className={styles.cart__box__delite}>
-        <img src={delite} alt="delite" />
-      </button>
     </div>
   )
 }
