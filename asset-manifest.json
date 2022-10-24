@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/logos-react/static/css/main.6ec67a04.css",
-    "main.js": "/logos-react/static/js/main.ec9588c0.js",
-    "static/js/303.0de9ce6d.chunk.js": "/logos-react/static/js/303.0de9ce6d.chunk.js",
-    "static/js/381.85cc8f98.chunk.js": "/logos-react/static/js/381.85cc8f98.chunk.js",
-    "static/js/949.3fa4432f.chunk.js": "/logos-react/static/js/949.3fa4432f.chunk.js",
+    "main.css": "/logos-react/static/css/main.5f67d401.css",
+    "main.js": "/logos-react/static/js/main.c52dd75f.js",
+    "static/js/303.c621a1ec.chunk.js": "/logos-react/static/js/303.c621a1ec.chunk.js",
+    "static/js/351.54ebb885.chunk.js": "/logos-react/static/js/351.54ebb885.chunk.js",
+    "static/js/381.07dd35c9.chunk.js": "/logos-react/static/js/381.07dd35c9.chunk.js",
+    "static/js/949.d27d7632.chunk.js": "/logos-react/static/js/949.d27d7632.chunk.js",
     "static/media/bg-info.jpg": "/logos-react/static/media/bg-info.1669929dd8cabf6bc6d2.jpg",
     "static/media/cart.jpg": "/logos-react/static/media/cart.3407d9c2db6e5c21765a.jpg",
-    "static/media/content1.jpg": "/logos-react/static/media/content1.ed6449b34706ae9aa408.jpg",
     "static/media/Gilroy-Medium.woff2": "/logos-react/static/media/Gilroy-Medium.acd4e613de34a826c191.woff2",
     "static/media/Gilroy-Bold.woff2": "/logos-react/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
     "static/media/Gilroy-Semibold.woff2": "/logos-react/static/media/Gilroy-Semibold.7726b19d33f1b7f4135a.woff2",
@@ -17,6 +17,7 @@
     "static/media/onion-1.svg": "/logos-react/static/media/onion-1.fde4a801fdf12b087560fa79cb924299.svg",
     "static/media/onion-2.svg": "/logos-react/static/media/onion-2.a5c0f69d3c1ecd13286b58e2f1c218a0.svg",
     "static/media/chef.svg": "/logos-react/static/media/chef.22f1a73d7c7b6f5c75728b18a94a88b7.svg",
+    "static/media/cross.svg": "/logos-react/static/media/cross.5af24d4ddd34fa949334c2301362ddcb.svg",
     "static/media/buy-page.svg": "/logos-react/static/media/buy-page.60f9bd53f935c78db6b4472c333fe538.svg",
     "static/media/instagram.svg": "/logos-react/static/media/instagram.2a0909f8f7d11b6014d4273edb558717.svg",
     "static/media/buy.svg": "/logos-react/static/media/buy.25845e6dfd5fe7eb651c0c2139edfc21.svg",
@@ -35,14 +36,15 @@
     "static/media/min.svg": "/logos-react/static/media/min.911c7f020a2ce6bb4253763d193761d7.svg",
     "static/media/plus.svg": "/logos-react/static/media/plus.4f28c31a6dc2374356d2c15ea282eb4b.svg",
     "static/media/minus.svg": "/logos-react/static/media/minus.f4a22bddb4a3c73c84121ec9c0239d89.svg",
-    "main.6ec67a04.css.map": "/logos-react/static/css/main.6ec67a04.css.map",
-    "main.ec9588c0.js.map": "/logos-react/static/js/main.ec9588c0.js.map",
-    "303.0de9ce6d.chunk.js.map": "/logos-react/static/js/303.0de9ce6d.chunk.js.map",
-    "381.85cc8f98.chunk.js.map": "/logos-react/static/js/381.85cc8f98.chunk.js.map",
-    "949.3fa4432f.chunk.js.map": "/logos-react/static/js/949.3fa4432f.chunk.js.map"
+    "main.5f67d401.css.map": "/logos-react/static/css/main.5f67d401.css.map",
+    "main.c52dd75f.js.map": "/logos-react/static/js/main.c52dd75f.js.map",
+    "303.c621a1ec.chunk.js.map": "/logos-react/static/js/303.c621a1ec.chunk.js.map",
+    "351.54ebb885.chunk.js.map": "/logos-react/static/js/351.54ebb885.chunk.js.map",
+    "381.07dd35c9.chunk.js.map": "/logos-react/static/js/381.07dd35c9.chunk.js.map",
+    "949.d27d7632.chunk.js.map": "/logos-react/static/js/949.d27d7632.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ec67a04.css",
-    "static/js/main.ec9588c0.js"
+    "static/css/main.5f67d401.css",
+    "static/js/main.c52dd75f.js"
   ]
 }
