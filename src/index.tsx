@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import './scss/App.scss';
 import App from './App';
 
@@ -15,11 +15,11 @@ if (rootElem){
   const root = ReactDOM.createRoot(rootElem);
   
   root.render(
-    <BrowserRouter>
+    <HashRouter>
       <Provider store={store}>
         <App />
       </Provider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

@@ -149,9 +149,9 @@ export const CartBlock: React.FC = () => {
                   </>
                 )}
               </div>
-              <a className={styles.offer__right} href="/">
+              <Link className={styles.offer__right} to="/cart/order">
                 Оформить заказ
-              </a>
+              </Link>
             </div>
           </>
         )}

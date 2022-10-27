@@ -7,6 +7,7 @@ import MainLayout from './layouts/MainLayout'
 import Spinner from './components/Spinner'
 
 const Cart = React.lazy(() => import('./pages/Cart'))
+const Order = React.lazy(() => import('./pages/Order'))
 const FoolFood = React.lazy(() => import('./pages/FoolFood'))
 const NotFound = React.lazy(() => import('./pages/NotFound'))
 
@@ -21,6 +22,14 @@ function App() {
           element={
             <Suspense fallback={<Spinner />}>
               <Cart />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/cart/order"
+          element={
+            <Suspense fallback={<Spinner />}>
+              <Order />
             </Suspense>
           }
         />

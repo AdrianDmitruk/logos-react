@@ -311,6 +311,7 @@
     background: #403C3B;
     box-shadow: 0px 30px 60px rgba(34, 31, 32, 0.2);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   
     @media (max-width:900px){
       padding: 0 0 10px 0;
     }
@@ -1205,5 +1206,125 @@
       padding-top: 13px;
       padding-bottom: 15px;
     }
+  }
+}
+
+.title{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: var(--font700);
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.order{
+  background: #403C3B;
+  flex: 1 0 auto;
+  padding-top: 50px;
+  padding-bottom: 90px;
+  &__container{
+    max-width: 830px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__cart{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: var(--font700);
+    color: var(--white);
+    max-width: 89px;
+    width: 100%;
+    margin-bottom: 37px;
+  }
+  &__cart-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+  }
+  &__title{
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    font-weight: var(--font700);
+    color: var(--white);
+    margin-bottom: 58px;
+  }
+  &__title-border{
+    width: 4px;
+    height: 33px;
+    background: #618967;
+    margin-right: 20px;
+  }
+  &__contakt{
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+    padding: 30px 30px 57px 30px;
+  }
+  &__contakt-form{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  &__contakt-input{
+    outline: none;
+    padding: 20px 30px;
+    width: 100%;
+    background: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: var(--font400);
+    color: var(--white);
+  }
+  &__contakt-input[type='number']{
+    -moz-appearance:textfield;
+  }
+  &__contakt-input::-webkit-outer-spin-button,
+  &__contakt-input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+  }
+  &__contakt-input::placeholder{
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: var(--font400);
+    color: var(--white);
+  }
+  &__delivery{
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+  }
+  &__delivery-check{
+    display: flex;
+    max-width: 363px;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: var(--font500);
+    color: var(--white);
+    border: 1px solid #72A479;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  &__check-box{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  &__check-box--active{
+    background: #72A479;
+
   }
 }
